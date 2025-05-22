@@ -1,0 +1,108 @@
+.aktsiyalar__inner {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  padding: 124px 121px 200px 127px;
+  background-color: #0009;
+  // &::before {
+  //   content: "";
+  //   border-radius: 20px;
+  //   position: absolute;
+  //   background-image: url(/img/aktsiyalar__bg.png);
+  //   width: 1300px;
+  //   height: 750px;
+  //   z-index: -1;
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+// .aktsiyalar__text {
+//   max-width: 648px;
+// }
+.aktsiyalar__title {
+  max-width: 553px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #fff;
+}
+.aktsiyalar__p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #fff;
+  max-width: 648px;
+}
+.aktsiyalar__p-span {
+  display: inline-block;
+  margin-top: 38px;
+}
+.aktsiyalar__card {
+  max-width: 389px;
+}
+.aktsiyalar__card-text {
+  margin-top: -5px;
+  padding: 37px 83px 25px 28px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.aktsiyalar__card-h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+.aktsiyalar__card-p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #9f9f9f;
+  margin-top: 5px;
+}
+
+@media (max-width: 1300px) {
+  .aktsiyalar__inner {
+    flex-direction: column-reverse;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .aktsiyalar__card {
+    width: 300px;
+    margin-top: 30px;
+  }
+  .aktsiyalar__card img {
+    width: 300px;
+  }
+  .aktsiyalar__title {
+    text-align: center;
+  }
+  .aktsiyalar__title {
+    font-size: 25px;
+  }
+  .aktsiyalar__p {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .aktsiyalar__p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+  }
+  .aktsiyalar__card-text {
+    padding: 20px;
+    width: 250px;
+  }
+  .aktsiyalar__card {
+    padding-left: 25px;
+  }
+  .aktsiyalar__card img {
+    width: 250px;
+  }
+}

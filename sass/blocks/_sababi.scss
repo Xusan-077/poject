@@ -1,0 +1,56 @@
+.sababi__inner {
+  margin-bottom: 100px;
+}
+
+.sababi__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #000;
+  max-width: 760px;
+  margin-bottom: 70px;
+}
+.sababi__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+.sababi__item {
+  max-width: 459px;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.sababi__item-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000;
+}
+.sababi__item-img-div {
+  background-color: #fff;
+  padding: 20px;
+}
+.sababi__item-p {
+  max-width: 307px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #989898;
+}
+
+@media (max-width: 1000px) {
+  .sababi__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 0;
+  }
+  .sababi__title {
+    font-size: 20px;
+    max-width: 1000px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}

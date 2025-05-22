@@ -1,0 +1,126 @@
+.qadam__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.qadam__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #000;
+  max-width: 711px;
+  text-align: center;
+}
+
+.qadam__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qadam__item {
+  width: 424px;
+  padding: 66px 50px 86px 140px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.qadam__item-title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1f1f1f;
+  margin-bottom: 22px;
+}
+
+.qadam__item-title::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/Ariza berish.svg");
+  width: 50px;
+  height: 50px;
+  left: -100px;
+  top: 10px;
+}
+
+.qadam__item-title::after {
+  content: "1";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background: linear-gradient(to right, #9f7437, #e3d293);
+  color: #000;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+}
+
+.qadam__item-title.qadam__item-title--active-1::before {
+  background-image: url("/img/Shartnoma.svg");
+}
+
+.qadam__item-title.qadam__item-title--active-1::after {
+  content: "2";
+}
+
+.qadam__item-title.qadam__item-title--active-2::before {
+  background-image: url("/img/Qabul qilish.svg");
+}
+
+.qadam__item-title.qadam__item-title--active-2::after {
+  content: "3";
+}
+
+.qadam__item-p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #989898;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .qadam__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qadam__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .qadam__item {
+    padding: 40px 30px 60px 80px;
+  }
+
+  .qadam__item-title::before {
+    left: -70px;
+  }
+
+  .qadam__item-title::after {
+    left: -30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .qadam__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}

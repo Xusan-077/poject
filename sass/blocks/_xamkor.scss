@@ -1,0 +1,20 @@
+.xamkor__inner {
+  background-color: #fff;
+  padding: 80px 0;
+  max-width: 1350px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 100px;
+}
+.xamkor__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.xamkor__item {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+}

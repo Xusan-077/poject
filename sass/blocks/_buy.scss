@@ -1,0 +1,114 @@
+.buy__inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px;
+  border-radius: 20px;
+  background-color: #0009;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url(/img/buy-bg.png);
+  //   width: 1400px;
+  //   left: 0;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+  //   height: 800px;
+  //   border-radius: 36px;
+  //   z-index: -1;
+  //   left: -60px;
+  // }
+}
+.buy__title {
+  max-width: 550px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #fff;
+}
+.buy__text {
+  max-width: 551px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #fff;
+}
+.buy__text-span {
+  margin-top: 36px;
+  display: inline-block;
+}
+.buy__info-form {
+  display: flex;
+  flex-direction: column;
+}
+.info__input {
+  max-width: 100%;
+  padding: 28px 0 28px 30px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+.buy__info {
+  width: 430px;
+}
+.buy__info-btn {
+  max-width: 100%;
+  padding: 28px 0 28px 0;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  // line-height: 20px;
+  font-weight: 700;
+}
+.buy__info-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff99;
+  margin-top: 40px;
+  width: 323px;
+}
+
+.buy__title--active {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .buy__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .buy__title {
+    display: none;
+  }
+  .buy__title--active {
+    display: block;
+    font-size: 31px;
+  }
+  .buy__text {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .buy__info {
+    width: 280px;
+  }
+  .buy__text {
+    font-size:18px ;
+    line-height: 22px;
+    width: 280px;
+  }
+  .buy__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align-last: center;
+  }
+  .buy__inner {
+    padding: 50px 20px 30px 20px;
+  }
+}

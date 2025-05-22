@@ -1,0 +1,129 @@
+.Savol__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Savol__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #000;
+}
+
+.Savol__p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #9f9f9f;
+  max-width: 520px;
+  margin-bottom: 10px;
+}
+
+.Savol__tel {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1f1f1f;
+  margin-bottom: 30px;
+}
+
+.buy__information {
+  margin-top: 50px;
+}
+
+.Savol__text {
+  max-width: 650px;
+}
+
+.info__input--active {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto 0 auto;
+}
+
+.buy__info-btn--active {
+  width: 100%;
+  max-width: 500px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px auto 0 auto;
+  margin-top: 10px;
+}
+
+.Savol__img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.buy__info-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+  .Savol__inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Savol__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .Savol__p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .Savol__tel {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Savol__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .Savol__p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .Savol__img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Savol__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .Savol__p {
+    font-size: 14px;
+  }
+
+  .Savol__tel {
+    font-size: 16px;
+  }
+
+  .Savol__img {
+    width: 200px;
+    margin-top: 30px;
+  }
+}
