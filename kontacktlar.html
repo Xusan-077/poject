@@ -286,6 +286,19 @@
       elheaderclick.addEventListener("click", () => {
         elburger.classList.toggle("flex");
       });
+
+      let footerTitles = document.querySelectorAll(".footer__title");
+      let footerItems = document.querySelectorAll(".footer__item");
+
+      footerTitles.forEach((title, index) => {
+        title.addEventListener("click", () => {
+          let item = footerItems[index];
+          if (item) {
+            item.classList.toggle("block");
+          }
+        });
+      });
     </script>
+
   </body>
 </html>
