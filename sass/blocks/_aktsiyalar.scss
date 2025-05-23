@@ -95,12 +95,27 @@
     line-height: 22px;
     text-align: left;
   }
+  .aktsiyalar__inner {
+    gap: 0;
+  }
   .aktsiyalar__card-text {
     padding: 20px;
     width: 250px;
   }
   .aktsiyalar__card {
     padding-left: 25px;
+  }
+  .aktsiyalar__p {
+    font-size: 17px;
+    line-height: 20px;
+    
+  }
+  .aktsiyalar__p-span {
+    font-size: 14px;
+    line-height: 20px;
+    color: #9f9f9f;
+    margin-top: 20px;
+
   }
   .aktsiyalar__card img {
     width: 250px;

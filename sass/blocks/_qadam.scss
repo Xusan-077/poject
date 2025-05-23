@@ -124,3 +124,17 @@
     margin-bottom: 20px;
   }
 }
+@media (max-width: 500px) {
+  .qadam__inner {
+    margin-top: 20px;
+  }
+  .qadam__title {
+    font-size: 18px;
+    width: 250px;
+    text-align: left;
+    margin-left: -60px;
+  }
+  .qadam__item {
+    padding: 30px 20px 30px 80px;
+  }
+}

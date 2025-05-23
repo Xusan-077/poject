@@ -70,6 +70,18 @@ elbtn.addEventListener("click", (e) => {
 let elheaderclick = document.querySelector(".header__click");
 let elburger = document.querySelector(".header__burger");
 
-elheaderclick.addEventListener("click", () => {
+elheaderclick.addEventListener("click", (e) => {
   elburger.classList.toggle("flex");
+});
+
+let footerTitles = document.querySelectorAll(".footer__title");
+let footerItems = document.querySelectorAll(".footer__item");
+
+footerTitles.forEach((title, index) => {
+  title.addEventListener("click", () => {
+    let item = footerItems[index];
+    if (item) {
+      item.classList.toggle("block");
+    }
+  });
 });

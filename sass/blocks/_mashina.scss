@@ -99,3 +99,19 @@
     line-height: 25px;
   }
 }
+
+
+@media (max-width:500px){
+  .mashina__text , .mashina__text span , .mashina__txt {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .mashina__subtitle {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .mashina__txt {
+    padding-bottom: 10px;
+  }
+}

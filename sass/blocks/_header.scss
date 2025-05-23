@@ -146,6 +146,12 @@
     display: block;
     padding-left: 40px;
   }
+  .header-burger__link {
+    width: 100%;
+    padding: 10px 40px;
+    display: inline-block;
+    margin: 0;
+  }
 }
 @media (max-width: 900px) {
   .header__place-div {
