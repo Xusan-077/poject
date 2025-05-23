@@ -208,6 +208,10 @@
     max-width: 1000px;
     overflow-x: auto;
     white-space: nowrap;
+        justify-content: flex-start;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 

@@ -779,6 +779,9 @@ img {
     max-width: 1000px;
     overflow-x: auto;
     white-space: nowrap;
+    justify-content: flex-start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 @media (max-width: 960px) {
@@ -962,7 +965,15 @@ img {
   color: #fff;
 }
 
-/* RESPONSIVE STYLES */
+.second-list {
+  max-width: 1300px;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: flex-start;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @media (max-width: 1280px) {
   .car__list {
     grid-template-columns: repeat(2, 1fr);
@@ -991,6 +1002,9 @@ img {
     white-space: nowrap;
     padding-bottom: 10px;
     width: 100%;
+    justify-content: flex-start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   .car__btn {
     flex: 0 0 auto;
@@ -1039,8 +1053,11 @@ img {
   .car__item-text {
     padding: 0;
   }
+  .car__item-speed {
+    gap: 10px;
+  }
   .car__item {
-    padding: 20px;
+    padding: 30px;
   }
 }
 @media (max-width: 700px) {
