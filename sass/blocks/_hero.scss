@@ -143,6 +143,30 @@
   padding: 28px 34px;
   color: #fff;
 }
+.hero__change-input {
+  border: none;
+  background-color: #f5f5f5;
+  padding: 28px 30px 28px 60px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #a4a4a4;
+}
+
+.hero__change-input-div {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/hero-icon.svg);
+    width: 14px;
+    height: 16px;
+    top: 30px;
+    left: 30px;
+  }
+}
+
 
 @media (max-width: 850px) {
   .hero__title {
