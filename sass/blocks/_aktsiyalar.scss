@@ -3,18 +3,17 @@
   display: flex;
   gap: 50px;
   padding: 124px 121px 200px 127px;
-  background-color: #0009;
-  // &::before {
-  //   content: "";
-  //   border-radius: 20px;
-  //   position: absolute;
-  //   background-image: url(/img/aktsiyalar__bg.png);
-  //   width: 1300px;
-  //   height: 750px;
-  //   z-index: -1;
-  //   top: 0;
-  //   left: 0;
-  // }
+  &::before {
+    content: "";
+    border-radius: 20px;
+    position: absolute;
+    background-image: url(/img/aktsiyalar__bg.png);
+    width: 1300px;
+    height: 750px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
 }
 // .aktsiyalar__text {
 //   max-width: 648px;
@@ -120,4 +119,13 @@
   .aktsiyalar__card img {
     width: 250px;
   }
+}
+
+@media (max-width:1350px){
+.aktsiyalar__inner {
+  background-color: #0009;
+  &::before {
+    display: none;
+  }
+}
 }

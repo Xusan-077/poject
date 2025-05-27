@@ -7,15 +7,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0009;
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-image: url(/img/mashina-bg-img.png);
-  //   width: 1350px;
-  //   height: 658px;
-  //   z-index: -1;
-  // }
+  // background-color: #0009;
+  top: 50px;
+  border-radius: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/mashina-bg-img.png);
+    width: 1350px;
+    height: 658px;
+    z-index: -1;
+  }
 }
 .hero__change-item-logo {
   width: 155px;
@@ -67,6 +69,14 @@
   font-weight: 700;
   line-height: 38px;
   color: #fff;
+}
+@media (max-width: 1350px) {
+  .mashina__inner {
+    background-color: #0009;
+    &::before {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 800px) {

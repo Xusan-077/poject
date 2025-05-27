@@ -1195,7 +1195,19 @@ img {
   justify-content: space-between;
   padding: 100px 50px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+.buy__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/buy-bg.png);
+  width: 1400px;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  border-radius: 36px;
+  z-index: -1;
+  left: -60px;
 }
 
 .buy__title {
@@ -1247,6 +1259,7 @@ img {
   background-color: transparent;
   color: #fff;
   font-size: 16px;
+  margin-top: 30px;
   font-weight: 700;
 }
 
@@ -1307,6 +1320,14 @@ img {
   }
   .buy__info-btn {
     margin-top: 10px;
+  }
+}
+@media (max-width: 1350px) {
+  .buy__inner {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .buy__inner::before {
+    display: none;
   }
 }
 .premium__inner {
@@ -1560,7 +1581,17 @@ img {
   display: flex;
   gap: 50px;
   padding: 124px 121px 200px 127px;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+.aktsiyalar__inner::before {
+  content: "";
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(/img/aktsiyalar__bg.png);
+  width: 1300px;
+  height: 750px;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .aktsiyalar__title {
@@ -1668,6 +1699,14 @@ img {
     width: 250px;
   }
 }
+@media (max-width: 1350px) {
+  .aktsiyalar__inner {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .aktsiyalar__inner::before {
+    display: none;
+  }
+}
 .xizmat__inner {
   display: flex;
   flex-direction: column;
@@ -1765,7 +1804,16 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  top: 50px;
+  border-radius: 20px;
+}
+.mashina__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/mashina-bg-img.png);
+  width: 1350px;
+  height: 658px;
+  z-index: -1;
 }
 
 .hero__change-item-logo {
@@ -1827,6 +1875,14 @@ img {
   color: #fff;
 }
 
+@media (max-width: 1350px) {
+  .mashina__inner {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .mashina__inner::before {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .mashina__inner {
     padding: 0 20px;
@@ -1937,9 +1993,18 @@ img {
 }
 .byudjet__inner {
   position: relative;
-  padding: 120px 30px 100px 90px;
+  padding: 120px 50px 100px 50px;
   margin-bottom: 45px;
-  background-color: rgba(0, 0, 0, 0.6);
+}
+.byudjet__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/byudjet__bg-img.png);
+  width: 1300px;
+  height: 1459px;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
 }
 
 .byudjet__text-div1 {
@@ -2030,6 +2095,14 @@ img {
   .byudjet__text2 {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+@media (max-width: 1350px) {
+  .byudjet__inner {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .byudjet__inner::before {
+    display: none;
   }
 }
 .xamkor__inner {

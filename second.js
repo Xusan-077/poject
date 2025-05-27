@@ -38,14 +38,11 @@ ellist.innerHTML = `
 
         </div>
       </li>
-`
+`;
 
+let elsecondlist = document.querySelector(".second-list");
 
-
-let elsecondlist = document.querySelector(".second-list")
-
-let filter = cars.filter((el) => el.id != id)
-
+let filter = cars.filter((el) => el.id != id);
 
 function domga(array, nodlist) {
   nodlist.innerHTML = "";
@@ -76,10 +73,13 @@ function domga(array, nodlist) {
 
 domga(filter, elsecondlist);
 
-
 let elheaderclick = document.querySelector(".header__click");
 let elburger = document.querySelector(".header__burger");
 
 elheaderclick.addEventListener("click", () => {
   elburger.classList.toggle("flex");
 });
+
+let elmodalbtn = document.querySelector(".page-btn--active-2");
+
+
